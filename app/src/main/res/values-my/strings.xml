@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tutorial</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="submit">Submit</string>
+    <string name="image">Image</string>
+    <string name="welcome_bookie"><font color="white">Welcome</font> <font color="#2EB533">Bookie!</font></string>
+    <string name="login_sub">Log in to your account to explore \n your adventure of books</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="new_user_register_here"><font color="white">New User?</font> <font color="#2EB533">Register Here</font></string>
+</resources>
