@@ -13,6 +13,7 @@ class NewReleaseAdapter(private val itemList:ArrayList<Movie>) :RecyclerView.Ada
     ):RecyclerView.ViewHolder(binding.root){
         fun bind(s: Movie) {
             binding.ivRelease.setImageResource(s.poster)
+
         }
 
     }
