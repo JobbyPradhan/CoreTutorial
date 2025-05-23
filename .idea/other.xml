@@ -16,6 +16,30 @@
           <option name="selected" value="true" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+          <option name="api" value="34" />
+          <option name="brand" value="google" />
+          <option name="codename" value="caiman" />
+          <option name="id" value="caiman" />
+          <option name="manufacturer" value="Google" />
+          <option name="name" value="Pixel 9 Pro" />
+          <option name="screenDensity" value="360" />
+          <option name="screenX" value="960" />
+          <option name="screenY" value="2142" />
+          <option name="selected" value="true" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
+          <option name="api" value="34" />
+          <option name="brand" value="samsung" />
+          <option name="codename" value="q6q" />
+          <option name="id" value="q6q" />
+          <option name="manufacturer" value="Samsung" />
+          <option name="name" value="Galaxy Z Fold6" />
+          <option name="screenDensity" value="420" />
+          <option name="screenX" value="1856" />
+          <option name="screenY" value="2160" />
+          <option name="selected" value="true" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
           <option name="api" value="27" />
           <option name="brand" value="DOCOMO" />
           <option name="codename" value="F01L" />
@@ -179,17 +203,6 @@
           <option name="screenDensity" value="420" />
           <option name="screenX" value="1080" />
           <option name="screenY" value="2400" />
-        </PersistentDeviceSelectionData>
-        <PersistentDeviceSelectionData>
-          <option name="api" value="34" />
-          <option name="brand" value="google" />
-          <option name="codename" value="caiman" />
-          <option name="id" value="caiman" />
-          <option name="manufacturer" value="Google" />
-          <option name="name" value="Pixel 9 Pro" />
-          <option name="screenDensity" value="360" />
-          <option name="screenX" value="960" />
-          <option name="screenY" value="2142" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
           <option name="api" value="34" />
@@ -489,17 +502,6 @@
           <option name="screenY" value="2176" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
-          <option name="api" value="34" />
-          <option name="brand" value="samsung" />
-          <option name="codename" value="q6q" />
-          <option name="id" value="q6q" />
-          <option name="manufacturer" value="Samsung" />
-          <option name="name" value="Galaxy Z Fold6" />
-          <option name="screenDensity" value="420" />
-          <option name="screenX" value="1856" />
-          <option name="screenY" value="2160" />
-        </PersistentDeviceSelectionData>
-        <PersistentDeviceSelectionData>
           <option name="api" value="30" />
           <option name="brand" value="google" />
           <option name="codename" value="r11" />
@@ -612,6 +614,6 @@
         </PersistentDeviceSelectionData>
       </list>
     </option>
-    <option name="selectedCloudProject" value="aungmingalarshop" />
+    <option name="selectedCloudProject" value="borazi-b6a74" />
   </component>
 </project>

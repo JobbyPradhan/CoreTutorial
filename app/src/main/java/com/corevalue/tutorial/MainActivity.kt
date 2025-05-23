@@ -13,43 +13,31 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.corevalue.tutorial.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
-    private var name :String ?= null
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        onClick()
-        setData()
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-    }
+        val navView: BottomNavigationView = binding.navView
 
-    private val pickImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-        uri?.let {
-            binding.imageView.setImageURI(it)
-        }
-    }
-    private fun onClick() {
-        binding.button.setOnClickListener {
-            binding.tvText.text = "My Name ${binding.editTextText.text}"
-            Toast.makeText(this, binding.tvText.text.toString(), Toast.LENGTH_LONG).show()
-            binding.editTextText.text.clear()
-        }
-        binding.imageView.setOnClickListener {
-            pickImage.launch("image/*")
-        }
-    }
-
-    private fun setData(){
-        binding.tvText.text = name
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        setSupportActionBar(binding.toolbar)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment, R.id.profileFragment
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
 }

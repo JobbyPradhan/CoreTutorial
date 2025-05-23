@@ -7,4 +7,6 @@
     <string name="login_sub">Log in to your account to explore \n your adventure of books</string>
     <string name="example_gmail_com">example@gmail.com</string>
     <string name="new_user_register_here"><font color="white">New User?</font> <font color="#2EB533">Register Here</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
