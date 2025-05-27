@@ -1,19 +1,14 @@
 package com.corevalue.tutorial
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.text.InputType
-import android.os.Build
-import android.util.Log
-import android.view.View
-import android.view.WindowManager
-import android.widget.ScrollView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.corevalue.tutorial.databinding.ActivityLoginBinding
-import com.corevalue.tutorial.util.setUpKeyboardListener
 import com.corevalue.tutorial.util.setUpKeyboardVisibilityListener
 
 class LoginActivity : AppCompatActivity() {
@@ -64,24 +59,4 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-    private fun scrollToBottomOnFocus(
-        vararg editTexts: View,
-        scrollView: ScrollView,
-        targetView: View,
-        bottomPadding: Int = 333
-    ) {
-        for (editText in editTexts) {
-            editText.setOnFocusChangeListener { _, hasFocus ->
-                if (hasFocus) {
-                    scrollView.setPadding(0, 0, 0, bottomPadding)
-                    scrollView.post {
-                        scrollView.smoothScrollTo(0, targetView.bottom)
-                    }
-                }
-            }
-        }
-    }
-
-
 }
