@@ -62,4 +62,11 @@ dependencies {
 
     //http
     //retrofit
+    implementation(libs.retrofit.v290)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    //image
+    implementation(libs.glide)
+//    kapt('com.github.bumptech.glide:compiler:4.16.0')
 }
